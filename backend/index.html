@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" href="css/colpick.css" type="text/css" />
+    <title>ColorPicker - jQuery plugin</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/colpick.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('*[colorpicker]').val("ff0000").css({
+				'width':'20px',
+				'height':'20px',
+				'background':function(){ return '#'+$(this).val(); }
+			}).colpick({
+				color:"ff0000",
+				layout:'hex',
+				colorScheme:'dark',
+				submit:0,
+				onChange:function(hsb,hex,rgb,el,bySetColor) {
+					$(el).css('background','#'+hex);
+					if(!bySetColor) $(el).val(hex);
+				}
+			}).keyup(function(){
+				$(this).colpickSetColor(this.value);
+			});
+			$("input:button").click(function(){console.log($('#picker').val())})
+		})
+		
+	</script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div id="picker" colorpicker></div>
+        <input type="button" id="test" value="picker"/>
+    </div>
+</body>
+</html>

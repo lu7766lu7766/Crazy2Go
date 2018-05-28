@@ -1,0 +1,185 @@
+a {
+	text-decoration:none;
+}
+a:link {
+	color:#000;
+}
+a:visited {
+	color:#000;
+}
+a:hover {
+	color:red;
+	text-decoration:underline;
+}
+a:active {
+	color:#00F;
+}
+
+#quick_links a {
+	text-decoration:none;
+}
+#quick_links a:link {
+	color:#fff;
+}
+#quick_links a:visited {
+	color:#fff;
+}
+#quick_links a:hover {
+	color:red;
+	text-decoration:underline;
+}
+#quick_links a:active {
+	color:#00F;
+}
+
+
+body {
+	margin-left:0;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:0;
+	font: 10pt tahoma,arial,"\5b8b\4f53";
+	font-family: tahoma,arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;
+	color:#363636;
+}
+
+.main {
+	width:100%;
+}
+
+.frame {
+	width:1225px;
+	margin:0 auto;
+	position:relative;
+	z-index:2;
+}
+
+.template_top {
+	width:1225px;
+	min-height:208px;
+	float:left;
+}
+
+.template_center {
+	width:1225px;
+	float:left;
+}
+
+.template_bottom {
+	width:1225px;
+	min-height:312px;
+	float:left;
+}
+
+.table {
+	display:table;
+	border-collapse:collapse;
+	width:100%;
+}
+
+.tr {
+	display:table-row;
+}
+
+.td {
+	display:table-cell;
+	vertical-align:top;
+}
+
+#sidebar {
+	right:0px;
+	position: absolute;
+	width:40px;
+	z-index:999;
+	pointer-events:none;
+}
+
+#sideoff {
+	background-color:rgba(255,255,255,1.0);
+	width:38px;
+	line-height:38px;
+	color:#fff;
+	text-align:center;
+	border:1px solid #989898;
+	position:absolute;
+	top:0px;
+	pointer-events:auto;
+}
+
+#sideinfo {
+	background-color:rgba(0,0,0,0.65);
+	width:40px;
+	border-bottom: 1px solid #989898;
+	position:absolute;
+	top:39px;
+}
+
+#sidemassage {
+	position:absolute;
+	padding:0 10px 0 10px;
+}
+	
+
+.icheckbox {
+    display: none;
+}
+ 
+.icheckbox + label {
+    height:15px;
+    display:inline-block;
+    padding-left: 18px;
+    background:url(http://www.crazy2go.com/public/img/template/click_icon2.jpg) no-repeat;
+}
+
+.icheckbox:checked + label {
+    height:15px;
+    display:inline-block;
+    padding-left: 18px;
+    background:url(http://www.crazy2go.com/public/img/template/click_icon.jpg) no-repeat;
+}
+
+.icheckbox2 {
+    display: none;
+}
+ 
+.icheckbox2 + label {
+    height:15px;
+    display:inline-block;
+    padding-left: 18px;
+    background:url(http://www.crazy2go.com/public/img/template/check.png) no-repeat;
+}
+
+.icheckbox2:checked + label {
+    height:15px;
+    display:inline-block;
+    padding-left: 18px;
+    background:url(http://www.crazy2go.com/public/img/template/check2.png) no-repeat;
+}
+
+label.error {
+	position: absolute;
+	pointer-events:none;
+	top:0px;
+	left:0px;
+	line-height:28px;
+	background-color:#FFFFA3;
+	color:#868686;
+	z-index:20;
+	text-align:center;
+	border-radius:3px 3px 3px 3px;
+	-moz-border-radius:3px 3px 3px 0px;
+	-webkit-border-radius:3px 3px 3px 0px;
+	opacity: 0.75;
+}
+
+label.error:after {
+	content:" ";
+	position:absolute;
+	pointer-events:none;
+	display:block;
+	width:0;
+	height:0;
+	border-style:solid;
+	border-width:3px 3px 0 0;
+	border-color:#FFFFA3 transparent transparent transparent;
+}​
